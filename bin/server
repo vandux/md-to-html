@@ -1,0 +1,5 @@
+#!/usr/bin/env
+
+# npm install -g node-static
+static -p 8000
+
