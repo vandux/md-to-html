@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'byebug'
+# require 'byebug'
 require 'kramdown'
 require 'fileutils'
 

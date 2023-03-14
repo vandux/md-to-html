@@ -1,5 +1,8 @@
 #!/usr/bin/env
 
+# TODO: look for existing simple file server
+# python, etc
+
 # npm install -g node-static
 static -p 8000
 

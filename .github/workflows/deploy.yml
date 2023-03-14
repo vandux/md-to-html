@@ -16,6 +16,8 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.2.1'
+    - name: Bundle
+      run: bundle install
     - name: Run a multi-line script
       run: ruby bin/build.rb
 
