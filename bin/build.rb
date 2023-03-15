@@ -5,7 +5,7 @@ require 'kramdown'
 require 'fileutils'
 
 # delete everything in dist directory
-FileUtils.rm_rf('dist')
+FileUtils.rm_rf('_site')
 
 # traverse src directory for markdown files
 for file in Dir.glob('src/**/*.md')
@@ -20,6 +20,6 @@ for file in Dir.glob('src/**/*.md')
   html = Kramdown::Document.new(markdown).to_html
   # write html to dist directory with same path and filename as src
   file_path = file.gsub('src/', '').gsub('.md', '.html')
-  FileUtils.mkdir_p("dist/#{File.dirname(file_path)}")
-  File.open("dist/#{file_path}", "w") { |f| f.write(html) }
+  FileUtils.mkdir_p("_site/#{File.dirname(file_path)}")
+  File.open("_site/#{file_path}", "w") { |f| f.write(html) }
 end
