@@ -4,5 +4,5 @@
 # python, etc
 
 # npm install -g node-static
-static -p 8000
+static ./_site -p 8000
 
